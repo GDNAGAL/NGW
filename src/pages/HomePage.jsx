@@ -22,6 +22,9 @@ const HomePage = () => {
           <img src="https://www.alverno.edu/images/Commit-24.png" alt=""/>
         </div>
       </div>
+      <div>
+        <iframe width="10%" height="100px" src="https://momento360.com/e/u/5ca7aa8900934ead92596debb687b50f?utm_campaign=embed&utm_source=other&heading=8.07&pitch=9.58&field-of-view=75&size=medium&display-plan=true" frameborder="0"></iframe>
+      </div>
       <section className="cont">
         <div className="container-fluid">
           <div className="d-flex justify-content-center p-4">

@@ -27,7 +27,7 @@ const Footer = () => {
     </div>
     <div>
         <div className="container-fluid footerWraper">
-            <div className="footer">
+            <div className="footer container-fluid">
                 <div className="row text-center">
                     <div className="col-md-4">
                         <div className='footerMcard bg-white rounded-bottom p-4 shadow' style={{width:"300px", margin:"auto"}}>

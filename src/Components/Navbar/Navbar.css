@@ -4,6 +4,13 @@
     top: 0;
     background-color: white;
 }
+.submenu{
+    z-index: 2000 !important;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+
+}
 .topnav{
     background-color: var(--primary-4);
     border-bottom-left-radius: 15px;
@@ -36,6 +43,9 @@ li a:hover{
 .navbtn:hover{
     border-bottom: 6px solid var(--primary-4);
 }
+.navbtn.active{
+    border-bottom: 6px solid var(--primary-4);
+}
 .navbtn span{
     font-size: 18px;
     text-transform: uppercase;
@@ -51,4 +61,14 @@ li a:hover{
 .sicon i:hover{
     background-color: white;
     color: var(--primary-4);
+}
+.sublinks a{
+    padding: 7px 0;
+    display: block;
+    color: var(--primary-4);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sublinks a:hover{
+    color: var(--secondary-3);
 }
