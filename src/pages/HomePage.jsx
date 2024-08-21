@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar/Navbar"
 import Blockquote from "../Components/Blockquote/Blockquote"
 import EOPCard from "../Components/EOPCard/EOPCard"
 import Heading from "../Components/Heading/Heading"
@@ -11,7 +10,6 @@ import ResponsiveNavbar from "../Components/ResponsiveNavbar/ResponsiveNavbar"
 const HomePage = () => {
   return (
     <div>
-      {/* <Navbar/> */}
       <ResponsiveNavbar/>
       <div className="d-none d-lg-flex justify-content-between crSection">
         <div className="d-flex flex-column justify-content-center align-items-center p-4">
