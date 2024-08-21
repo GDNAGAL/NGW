@@ -3948,13 +3948,25 @@ fieldset:disabled .btn {
 @media all and (min-width: 992px) {
 
   .navbar .has-megamenu{position:static!important;}
-  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+  .navbar .megamenu{
+    left:0;
+    right:0; 
+    width:100%; 
+    margin-top:0; 
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .15); 
+    border: none; 
+    padding-bottom: 40px;
+  }
   .megaMenuLink{
     text-decoration: none;
     border: 1px solid white;
+    color: black;
+    min-height: 120px;
   }
   .megaMenuLink:hover{
-    border: 1px solid #aeaeae;
+    border: 1px solid #c9c8c8;
+    color: var(--bs-danger) !important;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important */
   }
 
 }	
@@ -3966,6 +3978,18 @@ fieldset:disabled .btn {
     overflow-y: auto;
       max-height: 90vh;
       margin-top:10px;
+  }
+  .megaMenuLink{
+    text-decoration: none;
+    border: 1px solid white;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+  }
+  .megaMenuLink:hover{
+    /* border: 1px solid #c9c8c8; */
+    color: var(--bs-danger) !important;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important */
   }
 }
 
@@ -4522,6 +4546,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
+    width: 120px;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
@@ -4535,7 +4560,8 @@ fieldset:disabled .btn {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    text-align: center;
 }
 
 .navbar-nav .nav-link {
@@ -4667,9 +4693,14 @@ fieldset:disabled .btn {
 }
 
 @media (min-width:992px) {
+    .navbar-brand{
+        width: 180px;
+    }
     .navbar-expand-lg {
         flex-wrap: nowrap;
-        justify-content: flex-start
+        justify-content: flex-start;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
     .navbar-expand-lg .navbar-nav {
