@@ -6,11 +6,13 @@ import EventCard from "../Components/EventCard/EventCard"
 import A1Image from "../../public/Images/A1.JPG"
 import Footer from "../Components/Footer/Footer"
 import { Link } from "react-router-dom"
+import ResponsiveNavbar from "../Components/ResponsiveNavbar/ResponsiveNavbar"
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <ResponsiveNavbar/>
       <div className="d-none d-lg-flex justify-content-between crSection">
         <div className="d-flex flex-column justify-content-center align-items-center p-4">
           <div className="text-start ps-4 ms-4">

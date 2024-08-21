@@ -17,9 +17,9 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
+    //document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      //document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -32,11 +32,11 @@ const Navbar = () => {
           </div>
           <div className='d-flex flex-column'>
             <div className='d-flex text-white topnav justify-content-between'>
-              <div className="d-flex">
+              <div className="d-flex topm">
                 <li><NavLink to="/">News</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
                 <li><a href="">Event</a></li>
-                <li><a href="">{openSubMenu}</a></li>
+                <li><a href="">Academic</a></li>
                 <li><a href="">Give</a></li>
                 <li className='p-right'></li>
               </div>
@@ -50,9 +50,38 @@ const Navbar = () => {
             </div>
             <div className='mainNav'>
               <div className='d-flex justify-content-center text-center'>
-                <button className={`navbtn d-flex align-items-center ${openSubMenu==='academic'? 'active':''}`} onClick={() => handleSubMenu('academic')}>
+                <button className={`navbtn d-flex align-items-center ${openSubMenu==='academic'? 'active':''}`}>
                   <span>Academic & Admission</span>
                   <img src="https://www.alverno.edu/images/chevron-down.png" alt="" />
+                  <div className="d-none">
+                  <div className='submenu pt-4 pb-4 shadow'>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-3 border-end">
+                          <div className='p-2'>
+                            <img width='100%' src="https://www.alverno.edu/images/menu_CampusLife.png" alt="" />
+                            <p className='mt-3 contPara text-dark' style={{fontSize:'16px'}}>The best way to know if Alverno is right for you is to come visit!</p>
+                          </div>
+                        </div>
+                        <div className="col-3 border-end">
+                          <div className='p-2'>
+                            <strong>ACADEMICS</strong>
+                            <div className="sublinks">
+                              <Link to="check">Major and Program List</Link>
+                              <Link>Test</Link>
+                              <Link>Test</Link>
+                              <Link>Test</Link>
+                              <Link>Test</Link>
+                              <Link>Test</Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-3 border-end">C</div>
+                        <div className="col-3">D</div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
                 </button>
                 <button className='navbtn d-flex align-items-center' onClick={() => handleSubMenu('campus')}>
                   <span>Campus</span>
@@ -76,22 +105,29 @@ const Navbar = () => {
       </div>
 
       {openSubMenu === 'academic' && (
-        <div className='submenu pt-4 pb-4'>
+        <div className='submenu pt-4 pb-4 shadow'>
           <div className="container">
             <div className="row">
-              <div className="col-3">
-                <strong>ACADEMICS</strong>
-                <div className="sublinks">
-                  <Link>Major and Program List</Link>
-                  <Link>Test</Link>
-                  <Link>Test</Link>
-                  <Link>Test</Link>
-                  <Link>Test</Link>
-                  <Link>Test</Link>
+              <div className="col-3 border-end">
+                <div className='p-2'>
+                  <img width='100%' src="https://www.alverno.edu/images/menu_CampusLife.png" alt="" />
+                  <p className='mt-3 contPara text-dark' style={{fontSize:'16px'}}>The best way to know if Alverno is right for you is to come visit!</p>
                 </div>
               </div>
-              <div className="col-3">B</div>
-              <div className="col-3">C</div>
+              <div className="col-3 border-end">
+                <div className='p-2'>
+                  <strong>ACADEMICS</strong>
+                  <div className="sublinks">
+                    <Link to="check">Major and Program List</Link>
+                    <Link>Test</Link>
+                    <Link>Test</Link>
+                    <Link>Test</Link>
+                    <Link>Test</Link>
+                    <Link>Test</Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3 border-end">C</div>
               <div className="col-3">D</div>
             </div>
           </div>
