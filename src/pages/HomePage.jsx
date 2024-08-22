@@ -6,6 +6,7 @@ import A1Image from "../../public/Images/A1.JPG"
 import Footer from "../Components/Footer/Footer"
 import { Link } from "react-router-dom"
 import ResponsiveNavbar from "../Components/ResponsiveNavbar/ResponsiveNavbar"
+import BirthdayCard from "../Components/BirthdayCard/BirthdayCard"
 
 const HomePage = () => {
   return (
@@ -36,12 +37,41 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
         </div>
       </section>
 
-      <div className="container-fluid mt-4">
+      <div className="container-fluid mt-4 pt-4">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-8 mb-4">
+            <Heading HeadingText="Birthday Students"/>
+            <div id="carouselExampleIndicators" className="carousel slide">
+              <div className="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <BirthdayCard/>
+                </div>
+                <div className="carousel-item">
+                  <BirthdayCard/>
+                </div>
+                <div className="carousel-item">
+                  <BirthdayCard/>
+                </div>
+              </div>
+              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
             <div className="bg-white shadow border p-3" style={{borderRadius:"10px"}}>
               <Heading HeadingText="News & Announcement" showBar={false}/>
-              <div className="content" style={{height:"400px",overflow:"hidden"}}>
+              <div className="content" style={{height:"380px",overflow:"hidden"}}>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
@@ -63,7 +93,6 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
               </div>
             </div>
           </div>
-          <div className="col-md-6"></div>
         </div>
       </div>
 

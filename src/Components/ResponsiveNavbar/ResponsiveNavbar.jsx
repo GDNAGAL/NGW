@@ -5,7 +5,7 @@ import {NavLink, Link} from 'react-router-dom'
 const ResponsiveNavbar = () => {
   
     return (
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/"><img className='ms-3 img-fluid' src="https://www.alverno.edu/images/logo.svg" alt="" /></NavLink>
           <button className="navbar-toggler shadow-none align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
