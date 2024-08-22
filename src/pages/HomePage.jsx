@@ -9,6 +9,15 @@ import ResponsiveNavbar from "../Components/ResponsiveNavbar/ResponsiveNavbar"
 import BirthdayCard from "../Components/BirthdayCard/BirthdayCard"
 
 const HomePage = () => {
+  const birthdayStudent = [{
+    name:"Student 1",
+    class:"Class 7th",
+    profilePhoto:""
+  },{
+    name:"Student 2",
+    class:"Class 7th",
+    profilePhoto:""
+  }]
   return (
     <div>
       <ResponsiveNavbar/>
@@ -41,31 +50,39 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
         <div className="row">
           <div className="col-md-8 mb-4">
             <Heading HeadingText="Birthday Students"/>
-            <div id="carouselExampleIndicators" className="carousel slide">
-              <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  
+            <div className="card rounded bg-danger rounded-5">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="p-2">
+                      <img src="https://cdn.pixabay.com/photo/2020/10/06/21/54/cake-5633461__480.png" className="d-block w-100 rounded-5" alt="..."/>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div id="carouselExampleIndicators" className="carousel slide">
+                    <div className="carousel-inner">
+                      {
+                        birthdayStudent.map((student, index) => {
+                          const active = index === 0 ? " active" : "";
+                          return (
+                            <div key={index} className={`carousel-item${active}`}>
+                              <BirthdayCard student={student} />
+                            </div>
+                          );
+                        })
+                      }
+                    </div>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <BirthdayCard/>
-                </div>
-                <div className="carousel-item">
-                  <BirthdayCard/>
-                </div>
-                <div className="carousel-item">
-                  <BirthdayCard/>
-                </div>
-              </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
           <div className="col-md-4 mb-4">
@@ -80,16 +97,9 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
               </div>
               <div className="text-end mt-3">
-                <button className="button">View All</button>
+                <button className='btn btn-danger shadow-none rounded-3'>View All</button>
               </div>
             </div>
           </div>

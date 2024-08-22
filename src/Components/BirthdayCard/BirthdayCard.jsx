@@ -1,18 +1,17 @@
 
-const BirthdayCard = () => {
+const BirthdayCard = (obj) => {
+    const student = obj.student
   return (
-    <div className="card rounded bg-danger rounded-5">
-        <div className="d-flex">
-            <div className="d-flex align-items-center w-50 text-center text-white pt-4">
-            <div className="justify-content-center">
-                <img src="https://pngimg.com/d/student_PNG127.png" alt="" width="150px" height="150px" className="border border-5 rounded-circle"/>
+        <div className="d-block align-items-center text-center text-white p-2">
+            <div className="mb-4 mt-3">
+                <img width="130px" height="130px" className="border border-5 rounded-circle" src="https://w7.pngwing.com/pngs/241/840/png-transparent-computer-icons-student-school-student-angle-people-logo-thumbnail.png" alt="" />
             </div>
-            </div>
-            <div className="w-50 p-2">
-            <img src="https://cdn.pixabay.com/photo/2020/10/06/21/54/cake-5633461__480.png" className="d-block w-100 rounded-5" alt="..."/>
+            <div className="text-center">
+                <h4>{student.name}</h4>
+                <p>{student.class}</p>
+                <p><em>“Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!”</em></p>
             </div>
         </div>
-    </div>
   )
 }
 
