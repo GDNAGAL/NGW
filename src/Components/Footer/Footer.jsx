@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import Heading from '../Heading/Heading'
 import { Link } from 'react-router-dom'
+import slogo from '../../../public/Images/logo.webp'
 
 const Footer = () => {
   return (
@@ -30,8 +31,8 @@ const Footer = () => {
             <div className="footer container-fluid">
                 <div className="row text-center">
                     <div className="col-md-4">
-                        <div className='footerMcard bg-white rounded-bottom p-4 shadow' style={{width:"300px", margin:"auto"}}>
-                            <img src="https://www.alverno.edu/images/logo_footer.svg" alt="" />
+                        <div className='footerMcard bg-white rounded-5 p-4 shadow' style={{width:"300px", margin:"auto"}}>
+                            <img className='img-fluid' src={slogo} alt="" />
                         </div>
                         <div className="ssicon mt-3 d-flex align-items-center justify-content-around" style={{width:"400px", margin:"auto"}}>
                             <i className="bi bi-facebook"></i>

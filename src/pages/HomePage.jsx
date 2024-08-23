@@ -86,14 +86,9 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
             </div>
           </div>
           <div className="col-md-4 mb-4">
+            <Heading HeadingText="What's New"/>
             <div className="bg-white shadow border p-3" style={{borderRadius:"10px"}}>
-              <Heading HeadingText="News & Announcement" showBar={false}/>
-              <div className="content" style={{height:"380px",overflow:"hidden"}}>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
-                <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
+              <div className="content" style={{maxHeight:"280px",overflow:"hidden"}}>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
                 <Link className="d-block p-2" to=''>Firsrt Newsejgns</Link>
