@@ -7,6 +7,7 @@ import slogo from '../../../public/Images/logo.webp'
 const Footer = () => {
   return (
     <>
+    <div className="p-4"></div>
     <div children="d-flex flex-column">
         <div className='container'>
             <Heading HeadingText={"Ready For What's Next"}/>

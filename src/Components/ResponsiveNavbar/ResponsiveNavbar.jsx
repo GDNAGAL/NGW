@@ -10,7 +10,7 @@ const ResponsiveNavbar = () => {
         <div className="container-fluid">
           <NavLink className="navbar-brand d-flex align-items-center" to="/">
             <img className='ms-3 img-fluid' style={{height:'50px'}} src={slogo} alt="" />
-            <h4 className='text-dark mb-0 ms-3 pt-1' style={{fontWeight:800,opacity:.8}}>Narain Global Academy</h4>
+            {/* <h4 className='text-danger mb-0 ms-3 pt-1' style={{fontWeight:800,opacity:.8,textShadow: '-1px 2px 1px rgba(255, 193, 7, 1)'}}>Narain Global Academy</h4> */}
           </NavLink>
           <button className="navbar-toggler shadow-none align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className=" me-2" style={{fontSize:"18px"}}>
@@ -36,18 +36,18 @@ const ResponsiveNavbar = () => {
                             <strong className='d-block'>Our Story</strong>
                             <span className='text-muted d-none d-lg-block'>A comprehensive overview of the school's history, values, and growth over the years.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/our-vision">
                             <strong className='d-block'>Mission & Vision</strong>
                             <span className='text-muted d-none d-lg-block'>Clear statements about the school’s mission, vision, and educational philosophy.</span>
                           </Link>
                         </div>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/principalMessage">
                             <strong className='d-block'>Principal's Message</strong>
                             <span className='text-muted d-none d-lg-block'>A welcoming note from the principal, discussing the school's ethos and goals.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/our-staff">
                             <strong className='d-block'>Faculty & Staff</strong>
                             <span className='text-muted d-none d-lg-block'>Detailed profiles of the teaching and administrative staff, highlighting their qualifications and experience.</span>
                           </Link>

@@ -154,18 +154,18 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
 
       <div className="container-fluid">
         <div className="shadow mt-4" style={{borderRadius:"10px"}}>
-        <div className="row">
-          <div className="col-md-6 pb-4">
-            <div className="p-left pt-4">
-              <Heading HeadingText="Our Vision"/>
-              <p className="contPara text-dark">At NGA, our vision is to create a positive revolution in our entire vicinity and redefine the concept of “formal education.” We believe that education should be more than just a means to an end; it should be a transformative journey that empowers individuals to reach their full potential and make a meaningful impact in the world. Our aim is to go beyond the traditional boundaries of education and foster a holistic learning environment that nurtures creativity, critical thinking, and empathy.</p>
-              <button className="button">Read More</button>
+          <div className="row">
+            <div className="col-md-6 pb-4">
+              <div className="p-left pt-4">
+                <Heading HeadingText="Our Vision"/>
+                <p className="contPara text-dark text-center me-4">At NGA, our vision is to create a positive revolution in our entire vicinity and redefine the concept of “formal education.” We believe that education should be more than just a means to an end; it should be a transformative journey that empowers individuals to reach their full potential and make a meaningful impact in the world. Our aim is to go beyond the traditional boundaries of education and foster a holistic learning environment that nurtures creativity, critical thinking, and empathy.</p>
+                <button className="button">Read More</button>
+              </div>
+            </div>
+            <div className="col-md-6 d-flex align-items-center text-center">
+              <img src={A1Image} style={{margin:"auto"}} className="rounded-3" alt="" width="100%" height="100%"/>
             </div>
           </div>
-          <div className="col-md-6 d-flex align-items-center text-center">
-            <img src={A1Image} style={{margin:"auto"}} className="rounded-3" alt="" width="100%" height="100%"/>
-          </div>
-        </div>
         </div>
       </div>
 
