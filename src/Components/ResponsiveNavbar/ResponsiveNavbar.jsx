@@ -71,11 +71,11 @@ const ResponsiveNavbar = () => {
                     <div className="row">
                       <div className="col-lg-4 border-lg-end">
                         <div className="">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/why-choose-us">
                             <strong className='d-block'>Why Choose Us</strong>
                             <span className='text-muted d-none d-lg-block'>Key reasons to choose the school, including academic excellence, boarding facilities.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/how-to-apply">
                             <strong className='d-block'>How to Apply</strong>
                             <span className='text-muted d-none d-lg-block'>A detailed guide on the application process, including important dates and required documents.</span>
                           </Link>
@@ -86,7 +86,7 @@ const ResponsiveNavbar = () => {
                             <strong className='d-block'>Admission Form</strong>
                             <span className='text-muted d-none d-lg-block'>Direct link to the online application form.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/fee">
                             <strong className='d-block'>Fee Structure</strong>
                             <span className='text-muted d-none d-lg-block'>Breakdown of tuition, boarding fees, and other related costs.</span>
                           </Link>
@@ -110,7 +110,7 @@ const ResponsiveNavbar = () => {
                     <div className="row">
                       <div className="col-lg-4 border-lg-end">
                         <div className="">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/curriculum-overview">
                             <strong className='d-block'>Curriculum Overview</strong>
                             <span className='text-muted d-none d-lg-block'>A detailed description of the curriculum, including core subjects and specialized programs.</span>
                           </Link>
@@ -121,17 +121,17 @@ const ResponsiveNavbar = () => {
                         </div>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/classroom-facilities">
                             <strong className='d-block'>Classroom Facilities</strong>
                             <span className='text-muted d-none d-lg-block'>Information on classroom environments, technology integration, and learning resources.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/assessment-evaluation">
                             <strong className='d-block'>Assessment & Evaluation</strong>
                             <span className='text-muted d-none d-lg-block'>Overview of the school's assessment methods, grading system, and academic reports.</span>
                           </Link>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/special-programs">
                             <strong className='d-block'>Special Programs</strong>
                             <span className='text-muted d-none d-lg-block'>Information on special academic programs, such as Advanced Placement (AP) courses, International Baccalaureate (IB), or vocational training.</span>
                           </Link>
