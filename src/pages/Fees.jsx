@@ -6,7 +6,7 @@ const Fees = () => {
     <>
     <ResponsiveNavbar/>
     <div className="p-4 mb-4">
-      <div className="shadow-sm mt-4 p-3" style={{borderRadius:"10px"}}>
+      <div className="mt-4 p-3" style={{borderRadius:"10px"}}>
         <Heading HeadingText="Fee Structure at Narain Global Academy"/>
         <p className="contPara text-dark" style={{textAlign:"justify"}}>
             At Narain Global Academy, we believe in providing quality education with transparent and fair pricing. Our fee structure is designed to ensure students receive exceptional academic, co-curricular, and residential facilities while remaining accessible to families.

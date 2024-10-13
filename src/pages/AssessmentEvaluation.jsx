@@ -7,7 +7,7 @@ const AssessmentEvaluation = () => {
     <>
       <ResponsiveNavbar />
       <div className="p-4 mb-4">
-        <div className="shadow-sm mt-4 p-3" style={{ borderRadius: "10px" }}>
+        <div className="mt-4 p-3" style={{ borderRadius: "10px" }}>
           <Heading HeadingText="Assessment & Evaluation at Narain Global Academy" />
           <p className="contPara text-dark">
             At Narain Global Academy, we believe that assessments are a vital tool to understand a student’s progress, strengths, and areas that require attention. Our comprehensive evaluation system ensures a holistic review of each student's academic, personal, and social development. Our approach to assessment balances academic rigor with encouragement and personal growth.

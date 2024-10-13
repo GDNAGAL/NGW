@@ -6,7 +6,7 @@ const HowToApply = () => {
     <>
     <ResponsiveNavbar/>
     <div className="p-4 mb-4">
-      <div className="shadow-sm mt-4 p-3" style={{borderRadius:"10px"}}>
+      <div className="mt-4 p-3" style={{borderRadius:"10px"}}>
         <Heading HeadingText="How to Apply to Narain Global Academy"/>
         <p className="contPara text-dark">
             At Narain Global Academy, we welcome students who are eager to learn, grow, and become part of a vibrant educational community. Our application process is straightforward and designed to ensure a smooth transition for students and parents alike.

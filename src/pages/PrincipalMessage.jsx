@@ -6,7 +6,7 @@ const PrincipalMessage = () => {
     <>
     <ResponsiveNavbar/>
     <div className="p-4 mb-4">
-      <div className="shadow-sm mt-4 p-3" style={{borderRadius:"10px"}}>
+      <div className="mt-4 p-3" style={{borderRadius:"10px"}}>
       <Heading HeadingText="Principal's Words"/>
         <div className="row">
           <div className="col-md-9">

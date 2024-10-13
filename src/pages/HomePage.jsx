@@ -11,18 +11,18 @@ import BirthdayCard from "../Components/BirthdayCard/BirthdayCard"
 const HomePage = () => {
   const birthdayStudent = [{
     name:"Student 1",
-    class:"Class 7th",
+    className:"className 7th",
     profilePhoto:""
   },{
     name:"Student 2",
-    class:"Class 7th",
+    className:"className 7th",
     profilePhoto:""
   }]
   return (
     <div>
       <ResponsiveNavbar/>
-      <div className="d-none d-lg-flex justify-content-between crSection">
-        <div className="d-flex flex-column justify-content-center align-items-center p-4">
+      <div className="d-flex justify-content-between crSection">
+        {/* <div className="d-flex flex-column justify-content-center align-items-center p-4">
           <div className="text-start ps-4 ms-4">
             <h1 className="crHeading text-start">There's still time to commit</h1>
             <button className="button">Next steps for accepted students</button>
@@ -30,6 +30,44 @@ const HomePage = () => {
         </div>
         <div className="crImage">
           <img src="https://www.alverno.edu/images/Commit-24.png" alt=""/>
+        </div> */}
+        <div id="carouselExampleCaptions" className="carousel slide">
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={A1Image} className="d-block w-100" alt="..."/>
+              <div className="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={A1Image} className="d-block w-100" alt="..."/>
+              <div className="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={A1Image} className="d-block w-100" alt="..."/>
+              <div className="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
       <section className="cont">
@@ -103,46 +141,46 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
 
       <div className="pt-4 container-fluid">
         <div>
-          <Heading HeadingText="Explore our programs"/>
+          <Heading HeadingText="Academic Offerings"/>
         </div>
         <div className="">
           <div className="row">
             <div className="col-lg-6 col-xl-3 mb-4">
               <EOPCard
-                ImageURL="https://www.alverno.edu/files/_cache/30ee5f08498e9286b01fb46927b281c1.jpg"
-                Heading="Find Your Major"
-                Text="Explore our undergraduate major and minor programs for women."
-                ButtonText="Learn More"
-                ButtonLink="find-your-major"
+                ImageURL="https://images.stockcake.com/public/3/1/a/31a14d57-5ac9-440c-ac8e-0b45f65d5f5d_large/kids-enjoying-className-stockcake.jpg"
+                Heading="Primary Education"
+                Text="Explore our comprehensive primary education programs designed to build a strong foundation for lifelong learning."
+                ButtonText=""
+                ButtonLink=""
                 />
             </div>
 
             <div className="col-lg-6 col-xl-3 mb-4">
               <EOPCard
-                  ImageURL="https://www.alverno.edu/files/_cache/452cd75c4b41dd4db711a2796eaac637.jpg"
-                  Heading="Find Your Major"
-                  Text="Explore our undergraduate major and minor programs for women."
-                  ButtonText="Learn More"
+                  ImageURL="https://images.stockcake.com/public/2/a/2/2a2c7b60-1c70-406a-ade9-cbfb062deb33_large/students-collaborating-together-stockcake.jpg"
+                  Heading="Secondary Education"
+                  Text="Dive into our secondary education programs that equip students with the knowledge and skills for future success."
+                  ButtonText=""
                   ButtonLink=""
                 />
             </div>
 
             <div className="col-lg-6 col-xl-3 mb-4">
               <EOPCard
-                  ImageURL="https://www.alverno.edu/files/_cache/eb14be291a280fb203cf4c9cda4bd406.jpg"
-                  Heading="Find Your Major"
-                  Text="Explore our undergraduate major and minor programs for women."
-                  ButtonText="Learn More"
+                  ImageURL="https://odmps.org/updates/wp-content/uploads/2022/02/SCIENCE-EXHIBITION2-559x220-1.jpg"
+                  Heading="Special Programs"
+                  Text="Discover our special programs that cater to diverse interests, including arts, sciences, and technology."
+                  ButtonText=""
                   ButtonLink=""
                 />
             </div>
 
             <div className="col-lg-6 col-xl-3 mb-4">
               <EOPCard
-                  ImageURL="https://www.alverno.edu/files/_cache/6be9593fcb221835ea222dc3734029e1.jpg"
-                  Heading="Find Your Major"
-                  Text="Explore our undergraduate major and minor programs for women."
-                  ButtonText="Learn More"
+                  ImageURL="https://www.21kschool.com/in/wp-content/uploads/sites/4/2022/09/Top-5-Benefits-of-Co-Curricular-Activities-for-Students.png"
+                  Heading="Extracurricular Activities"
+                  Text="Explore our range of extracurricular activities that promote holistic development beyond academics."
+                  ButtonText=""
                   ButtonLink=""
                 />
             </div>
@@ -153,16 +191,21 @@ We hope that in this endeavour to spread knowledge we grow from strength to stre
       </div>
 
       <div className="container-fluid">
-        <div className="shadow mt-4" style={{borderRadius:"10px"}}>
+        <div className="mt-4" style={{borderRadius:"10px"}}>
           <div className="row">
             <div className="col-md-6 pb-4">
               <div className="p-left pt-4">
                 <Heading HeadingText="Our Vision"/>
                 <p className="contPara text-dark text-center me-4">At NGA, our vision is to create a positive revolution in our entire vicinity and redefine the concept of “formal education.” We believe that education should be more than just a means to an end; it should be a transformative journey that empowers individuals to reach their full potential and make a meaningful impact in the world. Our aim is to go beyond the traditional boundaries of education and foster a holistic learning environment that nurtures creativity, critical thinking, and empathy.</p>
-                <button className="button">Read More</button>
+                <Link to="/our-vision" className="button">Read More 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-double-right" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                    <path fillRule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </Link>
               </div>
             </div>
-            <div className="col-md-6 d-flex align-items-center text-center">
+            <div className="col-md-6 d-flex align-items-center text-center p-4">
               <img src={A1Image} style={{margin:"auto"}} className="rounded-3" alt="" width="100%" height="100%"/>
             </div>
           </div>

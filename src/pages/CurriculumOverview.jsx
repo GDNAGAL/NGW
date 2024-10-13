@@ -7,7 +7,7 @@ const CurriculumOverview = () => {
     <>
       <ResponsiveNavbar />
       <div className="p-4 mb-4">
-        <div className="shadow-sm mt-4 p-3" style={{ borderRadius: "10px" }}>
+        <div className="mt-4 p-3" style={{ borderRadius: "10px" }}>
           <Heading HeadingText="Curriculum Overview at Narain Global Academy" />
           <p className="contPara text-dark">
             At Narain Global Academy, our curriculum is designed to foster holistic development and prepare students for academic excellence, personal growth, and global citizenship. We offer a balanced blend of academic rigor, co-curricular activities, and values-based education to shape well-rounded individuals.

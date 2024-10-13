@@ -4,7 +4,6 @@ import {NavLink, Link} from 'react-router-dom'
 import slogo from '../../../public/Images/logo.webp'
 
 const ResponsiveNavbar = () => {
-  
     return (
       <nav className="navbar sticky-top navbar-expand-lg navbar-light">
         <div className="container-fluid">
@@ -149,28 +148,28 @@ const ResponsiveNavbar = () => {
                     <div className="row">
                       <div className="col-lg-4 border-lg-end">
                         <div className="">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/hostel-facilities">
                             <strong className='d-block'>Hostel Facilities</strong>
                             <span className='text-muted d-none d-lg-block'>Detailed information about dormitories, meal plans, and amenities available to boarding students.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/daily-schedule">
                             <strong className='d-block'>Daily Schedule</strong>
                             <span className='text-muted d-none d-lg-block'>A typical day in the life of a boarding student, including academic and extracurricular activities.</span>
                           </Link>
                         </div>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/health-welness">
                             <strong className='d-block'>Health & Wellness</strong>
                             <span className='text-muted d-none d-lg-block'>Overview of the school’s healthcare services, including medical check-ups, emergency care, and wellness programs.</span>
                           </Link>
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/counsling-service">
                             <strong className='d-block'>Counseling Services</strong>
                             <span className='text-muted d-none d-lg-block'>Information on mental health support, counseling services, and guidance programs.</span>
                           </Link>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/safety-security">
                             <strong className='d-block'>Safety & Security</strong>
                             <span className='text-muted d-none d-lg-block'>Description of the safety measures in place, including campus security, emergency protocols, and visitor management.</span>
                           </Link>
@@ -188,6 +187,7 @@ const ResponsiveNavbar = () => {
                     <div className="row">
                       <div className="col-lg-4 border-lg-end">
                         <div className="d-none d-lg-block">
+                          <h4 className='mb-4'>Gallary</h4>
                           <img className='img-fluid' src="https://www.alverno.edu/images/subfooter.jpg" alt="" />
                         </div>
                       </div>
@@ -212,7 +212,10 @@ const ResponsiveNavbar = () => {
                 </div> 
               </li>
               <li className="nav-item">
-                <Link className='nav-link' to="/news">News & Events</Link>
+                <Link className='nav-link' to="/news-event">News & Events</Link>
+              </li>
+              <li className="nav-item">
+                <a className='nav-link' href="https://narainglobalacademy.in/" target='_blank'>Blog</a>
               </li>
               <li className="nav-item me-4"></li>
               <li className="nav-item">

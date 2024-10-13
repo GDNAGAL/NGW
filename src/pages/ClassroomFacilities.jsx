@@ -7,7 +7,7 @@ const ClassroomFacilities = () => {
     <>
       <ResponsiveNavbar />
       <div className="p-4 mb-4">
-        <div className="shadow-sm mt-4 p-3" style={{ borderRadius: "10px" }}>
+        <div className="mt-4 p-3" style={{ borderRadius: "10px" }}>
           <Heading HeadingText="Classroom Facilities at Narain Global Academy" />
           <p className="contPara text-dark">
             At Narain Global Academy, we believe that a conducive learning environment is key to academic success. Our classrooms are designed to be student-centered, fostering both collaboration and independent learning. We ensure that students have access to the latest resources and technology to enhance their educational experience.

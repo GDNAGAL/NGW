@@ -6,7 +6,7 @@ const WhyChooseUS = () => {
     <>
     <ResponsiveNavbar/>
     <div className="p-4 mb-4">
-      <div className="shadow-sm mt-4 p-3" style={{borderRadius:"10px"}}>
+      <div className="mt-4 p-3" style={{borderRadius:"10px"}}>
         <Heading HeadingText="Why Choose Narain Global Academy?"/>
         <p className="contPara text-dark" style={{textAlign:"justify"}}>At Narain Global Academy, we are more than just a school – we are a nurturing community dedicated to shaping future leaders with strong values and global perspectives. Here’s why NGA stands out:
         </p>

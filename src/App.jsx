@@ -13,6 +13,12 @@ import CurriculumOverview from './pages/CurriculumOverview'
 import ClassroomFacilities from './pages/ClassroomFacilities'
 import SpecialPrograms from './pages/SpecialPrograms'
 import AssessmentEvaluation from './pages/AssessmentEvaluation'
+import HostelFacilities from './pages/HostelFacilities'
+import HealthAndWellness from './pages/HealthAndWellness'
+import SafetyAndSecurity from './pages/SafetyAndSecurity'
+import DailySchedule from './pages/DailySchedule'
+import CounselingServices from './pages/CounselingServices'
+import NewsEvents from './pages/NewsEvents'
 
 
 const App = () => {
@@ -34,6 +40,12 @@ const App = () => {
           <Route path="/classroom-facilities" element={<ClassroomFacilities/>}/>
           <Route path="/special-programs" element={<SpecialPrograms/>}/>
           <Route path="/assessment-evaluation" element={<AssessmentEvaluation/>}/>
+          <Route path="/hostel-facilities" element={<HostelFacilities/>}/>
+          <Route path="/health-welness" element={<HealthAndWellness/>}/>
+          <Route path="/safety-security" element={<SafetyAndSecurity/>}/>
+          <Route path="/daily-schedule" element={<DailySchedule/>}/>
+          <Route path="/counsling-service" element={<CounselingServices/>}/>
+          <Route path="/news-event" element={<NewsEvents/>}/>
         </Routes>
       </BrowserRouter>
     </div>

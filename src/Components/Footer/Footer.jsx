@@ -3,6 +3,7 @@ import './Footer.css'
 import Heading from '../Heading/Heading'
 import { Link } from 'react-router-dom'
 import slogo from '../../../public/Images/logo.webp'
+import A1Image from "../../../public/Images/A1R.png"
 
 const Footer = () => {
   return (
@@ -10,21 +11,21 @@ const Footer = () => {
     <div className="p-4"></div>
     <div children="d-flex flex-column">
         <div className='container'>
-            <Heading HeadingText={"Ready For What's Next"}/>
+            <Heading HeadingText={"Preparing Your Child for a Brighter Future"}/>
             <div className='row text-center mt-4'>
                 <div className="col-md-4 mb-3">
-                    <button className='button'>Schedule a Tour</button>
+                    <button className='button'>Book a Campus Tour</button>
                 </div>
                 <div className="col-md-4 mb-3">
-                    <button className='button'>Request Information</button>
+                    <button className='button'>Inquire for More Information</button>
                 </div>
                 <div className="col-md-4 mb-3">
-                    <button className='button'>Apply Now</button>
+                    <button className='button'>Enroll Now</button>
                 </div>
             </div>
         </div>
         <div>
-            <img src="https://www.alverno.edu/images/subfooter.jpg" alt="" width="100%"/>
+            <img src={A1Image} alt="" width="100%"/>
         </div>
     </div>
     <div>
@@ -50,27 +51,24 @@ const Footer = () => {
                                 Nokha Road, Jhajhu, Kolayat, Bikaner, Raj. -334001
                                 </address>
                                 <div className="footerLink">
-                                    <Link to="">Campus Map</Link>
-                                    <Link to="">Campus Map</Link>
+                                    <div className='mb-1'>+91 9000000000</div>
+                                    <div className='mb-3'>+91 9000000000</div>
+                                    <div className='mb-3'>narainglobalacademy.bkn@gmail.com</div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="footerLink">
+                                    <Link to="">Career</Link>
+                                    <Link to="">Blog</Link>
                                     <Link to="">Contact Us</Link>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className="footerLink">
-                                    <Link to="">Campus Map</Link>
-                                    <Link to="">Campus Map</Link>
-                                    <Link to="">Contact Us</Link>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="footerLink">
-                                    <Link to="">Campus Map</Link>
-                                    <Link to="">Campus Map</Link>
-                                    <Link to="">Contact Us</Link>
-                                    <Link to="">Contact Us</Link>
-                                    <Link to="">Contact Us</Link>
-                                    <Link to="">Contact Us</Link>
-                                    <Link to="">Contact Us</Link>
+                                    <Link to="">Home</Link>
+                                    <Link to="">About</Link>
+                                    <Link to="">News</Link>
+                                    <Link to="">Gallery</Link>
                                 </div>
                             </div>
                         </div>
