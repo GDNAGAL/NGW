@@ -19,6 +19,7 @@ import SafetyAndSecurity from './pages/SafetyAndSecurity'
 import DailySchedule from './pages/DailySchedule'
 import CounselingServices from './pages/CounselingServices'
 import NewsEvents from './pages/NewsEvents'
+import ContactUs from './pages/ContactUs'
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/daily-schedule" element={<DailySchedule/>}/>
           <Route path="/counsling-service" element={<CounselingServices/>}/>
           <Route path="/news-event" element={<NewsEvents/>}/>
+          <Route path="/contact-us" element={<ContactUs/>}/>
         </Routes>
       </BrowserRouter>
     </div>

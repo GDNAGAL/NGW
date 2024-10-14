@@ -20,7 +20,8 @@
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
-    --bs-danger: #b02a37;
+    /* --bs-danger: #b02a37; */
+    --bs-danger: #523012;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
 
@@ -3387,21 +3388,21 @@ fieldset:disabled .btn {
 
 .btn-danger {
     color: #fff;
-    background-color: #98002e;
-    border-color: #98002e
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger)
 }
 
 .btn-danger:hover {
-    color: #b02a37;
+    color: var(--bs-danger);
     background-color: transparent;
-    border-color: #b02a37
+    border-color: var(--bs-danger)
 }
 
 .btn-check:focus+.btn-danger,
 .btn-danger:focus {
-    color: #b02a37;
+    color: var(--bs-danger);
     background-color: transparent;
-    border-color: #b02a37;
+    border-color: var(--bs-danger);
     box-shadow: 0 0 0 .25rem rgba(225, 83, 97, .5)
 }
 
@@ -3426,8 +3427,8 @@ fieldset:disabled .btn {
 .btn-danger.disabled,
 .btn-danger:disabled {
     color: #fff;
-    background-color: #98002e;
-    border-color: #98002e
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger)
 }
 
 .btn-light {
@@ -8300,7 +8301,7 @@ fieldset:disabled .btn {
 }
 
 .text-danger {
-    color: #98002e !important
+    color: var(--bs-danger) !important
 }
 
 .text-light {
@@ -8356,7 +8357,7 @@ fieldset:disabled .btn {
 }
 
 .bg-danger {
-    background-color: #98002e !important
+    background-color: var(--bs-danger) !important
 }
 
 .bg-light {

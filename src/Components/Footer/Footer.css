@@ -1,12 +1,12 @@
 .footerWraper{
-    background-color: var(--primary-4);
+    background-color: var(--bs-danger);
     padding: 40px 0;
     z-index: 20;
     position: relative;
 }
 .footerWraper:before {
     height: 10px;
-    background: var(--primary);
+    background: var(--bs-danger);
     width: 100%;
     content: "";
     display: block;
@@ -32,7 +32,7 @@
 }
 .ssicon{
     position: relative;
-    top : -60px;
+    top : -100px;
     padding: 0 20px;
 }
 .ssicon i{
@@ -45,13 +45,41 @@
 
 .footerMcard{
     position: relative;
-    top: -70px;
+    top: -100px;
 }
 
 .designBy{
-    background-color: var(--primary-5);
+    position: relative;
+    background-color: white;
     text-align: center;
-    color: white;
-    padding: 20px 0px;
+    color: var(--bs-danger);
+    padding: 4px 0px;
     font-weight: 200;
+}
+.designByMobile{
+    background-color: white;
+    text-align: center;
+    color: var(--bs-danger);
+    padding: 4px 0px;
+    font-weight: 200;
+}
+.designBy::after{
+    content: "";
+    background: url(https://bikanerboysschool.ac.in/images/faleft.png) 0px 0px no-repeat;
+    height: 57px;
+    width: 99px;
+    float: left;
+    position: absolute;
+    left: -99px;
+    top: 0;
+}
+.designBy::before{
+    content: "";
+    background: url(https://bikanerboysschool.ac.in/images/faright.png) 0px 0px no-repeat;
+    height: 57px;
+    width: 99px;
+    float: right;
+    position: absolute;
+    right: -99px;
+    top: 0;
 }

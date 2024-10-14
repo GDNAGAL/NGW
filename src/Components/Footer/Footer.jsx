@@ -33,10 +33,10 @@ const Footer = () => {
             <div className="footer container-fluid">
                 <div className="row text-center">
                     <div className="col-md-4">
-                        <div className='footerMcard bg-white rounded-5 p-4 shadow' style={{width:"300px", margin:"auto"}}>
+                        <div className='footerMcard bg-white p-4 shadow' style={{width:"200px", borderTopRightRadius:"50%", borderTopLeftRadius:"50%", borderBottomRightRadius:"10px", borderBottomLeftRadius:"10px", margin:"auto"}}>
                             <img className='img-fluid' src={slogo} alt="" />
                         </div>
-                        <div className="ssicon mt-3 d-flex align-items-center justify-content-around" style={{width:"400px", margin:"auto"}}>
+                        <div className="ssicon mt-3 d-flex align-items-center justify-content-around" style={{maxWidth:"300px", margin:"auto"}}>
                             <i className="bi bi-facebook"></i>
                             <i className="bi bi-whatsapp"></i>
                             <i className="bi bi-instagram"></i>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <div className="footerLink">
                                     <Link to="">Career</Link>
                                     <Link to="">Blog</Link>
-                                    <Link to="">Contact Us</Link>
+                                    <Link to="/contact-us">Contact Us</Link>
                                 </div>
                             </div>
                             <div className="col-md-4">
@@ -76,8 +76,23 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className="designBy">
-            <p className='m-0'>Design & Developed By : IndiaWebSol</p>
+        <div className="container-fluid">
+            <div className="row justify-content-center bg-danger">
+                <div className="col-md-6">
+                    {/* For Large Screens */}
+                    <div className="designBy d-none d-md-flex">
+                        <p className='m-0'>Copyright © 2024- Narain Global Academy.</p>
+                        <p className='m-0'>Design & Developed By : IndiaWebSol PVT LTD.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/* For Small Devices */}
+        <div className='bg-white p-2'>
+            <div className="designByMobile d-block d-md-none">
+                <p className='m-0 text-center'>Copyright © 2024- Narain Global Academy.</p>
+                <p className='m-0 text-center'>Design & Developed By : IndiaWebSol PVT LTD.</p>
+            </div>
         </div>
     </div>
     </>

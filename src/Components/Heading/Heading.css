@@ -2,7 +2,7 @@
     text-align: center;
 }
 .Heading h2{
-    color: var(--primary-4);
+    color: var(--bs-danger);
     font-weight: 700;
     text-transform: uppercase;
 }

@@ -1,4 +1,5 @@
 import Blockquote from "../Components/Blockquote/Blockquote"
+import { Helmet } from "react-helmet-async"
 import EOPCard from "../Components/EOPCard/EOPCard"
 import Heading from "../Components/Heading/Heading"
 import EventCard from "../Components/EventCard/EventCard"
@@ -21,6 +22,12 @@ const HomePage = () => {
   return (
     <div>
       <ResponsiveNavbar/>
+      <Helmet>
+      <title>Narain Global Academy - Best Private School in Bikaner | Quality Education for Your Child</title>
+        <meta name="description" content="Looking for the best private school in Bikaner? Narain Global Academy offers quality education, extracurricular activities, and a nurturing environment. Enroll now!"/>
+        <meta name="keywords" content="Narain Global Academy, school in Bikaner, best school Bikaner, quality education, holistic development, enroll now, education in Bikaner"/>
+        <link rel="canonical" href="https://narainglobalacademy.com/"/>
+      </Helmet>
       <div className="d-flex justify-content-between crSection">
         {/* <div className="d-flex flex-column justify-content-center align-items-center p-4">
           <div className="text-start ps-4 ms-4">
@@ -75,10 +82,7 @@ const HomePage = () => {
           <div className="d-flex justify-content-center p-4">
             <div className="col-md-10 text-center">
               <h1 className="contHeading">Welcome To Narain Global Academy</h1>
-              <p className="contPara">The best school in Jhajhu, was established in 2019. It is a Co-Educational school nestled in the Eastern Periphery of Rajasthan and established by Narain Education society jhajhu. A need for an academic institution to nurture young talents with a state-of -the -art facilities and develop the skills to face the challenges of modern society initiated the Trust to set up NGA.
-With the Paradigm shift in Education the school’s thrust is to develop the skills to face the challenges of modern society and to provide a comprehensive education which will create creative, logical, analytical and innovative minds.
-It was the vision of Sri Baljeet Singh and Sunder Sir who dreamt of an educational system that would slowly germinate the seedlings thus nurtured will reap fruits for the future.
-We hope that in this endeavour to spread knowledge we grow from strength to strength.</p>
+              <p className="contPara">Established in 2019, Narain Global Academy (NGA) is a co-educational institution located in the Eastern Periphery of Rajasthan. Founded by the Narain Education Society, our school was born out of the need for an academic institution that nurtures young talent through state-of-the-art facilities and innovative educational approaches.</p>
             </div>
           </div>
         </div>
