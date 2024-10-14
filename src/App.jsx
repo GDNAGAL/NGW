@@ -1,9 +1,8 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import PrincipalMessage from './pages/PrincipalMessage'
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 import OurVision from './pages/OurVision'
 import OurStaff from './pages/OurStaff'
 import WhyChooseUS from './pages/WhyChooseUS'
@@ -25,8 +24,6 @@ import ContactUs from './pages/ContactUs'
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-      <ScrollToTop/>
         <Routes>
           <Route index element={<HomePage/>}/>
           <Route path="/home" element={<HomePage/>}/>
@@ -49,7 +46,6 @@ const App = () => {
           <Route path="/news-event" element={<NewsEvents/>}/>
           <Route path="/contact-us" element={<ContactUs/>}/>
         </Routes>
-      </BrowserRouter>
     </div>
   )
 }
