@@ -196,12 +196,12 @@ const HomePage = () => {
 
       <div className="container-fluid">
         <div className="mt-4" style={{borderRadius:"10px"}}>
-          <div className="row">
-            <div className="col-md-6 pb-4">
-              <div className="p-left pt-4">
+          <div className="row justify-content-center">
+            <div className="col-md-10 pb-4">
+              <div className="p-left pt-4 pb-5 rounded shadow">
                 <Heading HeadingText="Our Vision"/>
                 <p className="contPara text-dark text-center me-4">At NGA, our vision is to create a positive revolution in our entire vicinity and redefine the concept of “formal education.” We believe that education should be more than just a means to an end; it should be a transformative journey that empowers individuals to reach their full potential and make a meaningful impact in the world. Our aim is to go beyond the traditional boundaries of education and foster a holistic learning environment that nurtures creativity, critical thinking, and empathy.</p>
-                <Link to="/our-vision" className="button">Read More 
+                <Link to="/our-vision" className="btn btn-danger float-end me-4">Read More 
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-double-right" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
                     <path fillRule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
@@ -209,9 +209,9 @@ const HomePage = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-md-6 d-flex align-items-center text-center p-4">
+            {/* <div className="col-md-6 d-flex align-items-center text-center p-4">
               <img src={A1Image} style={{margin:"auto"}} className="rounded-3" alt="" width="100%" height="100%"/>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

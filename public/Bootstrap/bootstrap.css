@@ -3151,7 +3151,7 @@ textarea.form-control.is-invalid {
 .btn-check:focus+.btn,
 .btn:focus {
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+    box-shadow: none
 }
 
 .btn.disabled,
@@ -3403,7 +3403,7 @@ fieldset:disabled .btn {
     color: var(--bs-danger);
     background-color: transparent;
     border-color: var(--bs-danger);
-    box-shadow: 0 0 0 .25rem rgba(225, 83, 97, .5)
+    box-shadow: none;
 }
 
 .btn-check:active+.btn-danger,
@@ -3412,8 +3412,8 @@ fieldset:disabled .btn {
 .btn-danger:active,
 .show>.btn-danger.dropdown-toggle {
     color: #fff;
-    background-color: #b02a37;
-    border-color: #a52834
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger)
 }
 
 .btn-check:active+.btn-danger:focus,

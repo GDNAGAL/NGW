@@ -67,7 +67,7 @@ const Footer = () => {
                                 <div className="footerLink">
                                     <Link to="">Home</Link>
                                     <Link to="">About</Link>
-                                    <Link to="">News</Link>
+                                    <Link to="/news-event">News</Link>
                                     <Link to="">Gallery</Link>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="row justify-content-center bg-danger">
                 <div className="col-md-6">
                     {/* For Large Screens */}
-                    <div className="designBy d-none d-md-flex">
+                    <div className="designBy d-none d-md-flex flex-column">
                         <p className='m-0'>Copyright © 2024- Narain Global Academy.</p>
                         <p className='m-0'>Design & Developed By : IndiaWebSol PVT LTD.</p>
                     </div>
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
         </div>
         {/* For Small Devices */}
-        <div className='bg-white p-2'>
+        <div className='bg-white p-3'>
             <div className="designByMobile d-block d-md-none">
                 <p className='m-0 text-center'>Copyright © 2024- Narain Global Academy.</p>
                 <p className='m-0 text-center'>Design & Developed By : IndiaWebSol PVT LTD.</p>

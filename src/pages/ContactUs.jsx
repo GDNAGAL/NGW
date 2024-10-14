@@ -15,24 +15,7 @@ const ContactUs = () => {
 
       <div className="row">
         <div className="col-md-6">
-            <div className='col-md-8'>
-                <p className='card shadow-sm p-2 rounded-3'>
-                    <h4 className='text-danger'>Address :</h4>
-                    <p>9988/B-1, S.K Tower, Sarai Rohilla, New Rohtak Road, Delhi-110005</p>
-                </p>
-                <p className='card shadow-sm p-2 rounded-3'>
-                    <h4 className='text-danger'>Contact :</h4>
-                    <p>+91 90xxxxxxxxx</p>
-                </p>
-                <p className='card shadow-sm p-2 rounded-3'>
-                    <h4 className='text-danger'>Email :</h4>
-                    <p>support@narainglobalacademy.com</p>
-                </p>
-            </div>
-        </div>
-
-        <div className="col-md-6">
-          <h2 className='text-danger'>Questions?<br/>
+        <h2 className='text-danger text-center'>Questions?<br/>
           Feel free to contact us.</h2>
           <form>
             <div className="row">
@@ -57,20 +40,37 @@ const ContactUs = () => {
                     <textarea className="form-control shadow-none" id="message" name="message" rows="7" required></textarea>
                 </div>
             </div>
-            <button type="submit" className="btn btn-danger">Send Message</button>
+            <button type="submit" className="btn btn-danger shadow-none">Send Message</button>
           </form>
+        </div>
+
+        <div className="col-md-6">
+            <div className='col-md-8 text-center pt-4 m-auto mt-4'>
+              <div className='card shadow-sm p-2 rounded-3 mb-3'>
+                  <h4 className='text-danger'>Address :</h4>
+                  <p>9988/B-1, S.K Tower, Sarai Rohilla, New Rohtak Road, Delhi-110005</p>
+              </div>
+              <div className='card shadow-sm p-2 rounded-3 mb-3'>
+                  <h4 className='text-danger'>Contact :</h4>
+                  <p>+91 90xxxxxxxxx</p>
+              </div>
+              <div className='card shadow-sm p-2 rounded-3 mb-3'>
+                  <h4 className='text-danger'>Email :</h4>
+                  <p>support@narainglobalacademy.com</p>
+              </div>
+            </div>
         </div>
       </div>
 
       <div className="mt-5">
-        <h2>Our Location</h2>
+        <Heading HeadingText="Our Location"/>
         <div className="map-container">
           {/* Replace 'YOUR_GOOGLE_MAPS_EMBED_URL' with your Google Maps Embed URL */}
           <iframe
             title="Narain Global Academy Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4851361009815!2d73.23268931538366!3d28.025447693144847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39615d629d4d7c59%3A0xd8f4db3e60e2edc2!2sNarain%20Global%20Academy!5e0!3m2!1sen!2sin!4v1697285576335!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.354094936796!2d73.02282817569042!3d27.768061676147838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393f91abe209ef11%3A0xb9a4224afc6a8fc3!2sNarain%20Global%20Academy!5e0!3m2!1sen!2sin!4v1728922286700!5m2!1sen!2sin"
             width="100%"
-            height="300"
+            height="400"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
