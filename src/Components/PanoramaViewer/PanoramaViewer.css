@@ -1,0 +1,27 @@
+.panolens-canvas{
+    border-radius: .8rem !important;
+}
+.pano div:last-child{
+    border-radius: .8rem !important;
+}
+
+.panorama-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .panorama-title {
+    position: absolute;
+    top: 10px; /* Adjust the position as needed */
+    left: 10px;
+    right: 10px;
+    /* transform: translateX(-50%); */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  

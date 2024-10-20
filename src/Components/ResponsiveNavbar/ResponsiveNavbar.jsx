@@ -52,7 +52,7 @@ const ResponsiveNavbar = () => {
                           </Link>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/virtual-tour">
                             <strong className='d-block'>Campus Tour</strong>
                             <span className='text-muted d-none d-lg-block'>A virtual tour of the school’s campus, showcasing facilities, classrooms, and common areas.</span>
                           </Link>
@@ -202,7 +202,7 @@ const ResponsiveNavbar = () => {
                           </Link>
                       </div>
                       <div className="col-lg-4">
-                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/about">
+                          <Link className='d-block p-2 megaMenuLink rounded-5' to="/virtual-tour">
                             <strong className='d-block'>Virtual Tour</strong>
                             <span className='text-muted d-none d-lg-block'>Interactive virtual tour of the campus, allowing users to explore different areas of the school.</span>
                           </Link>

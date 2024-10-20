@@ -48,7 +48,7 @@ const ContactUs = () => {
             <div className='col-md-8 text-center pt-4 m-auto mt-4'>
               <div className='card shadow-sm p-2 rounded-3 mb-3'>
                   <h4 className='text-danger'>Address :</h4>
-                  <p>9988/B-1, S.K Tower, Sarai Rohilla, New Rohtak Road, Delhi-110005</p>
+                  <p>Nokha Road, Jhajhu, Kolayat, Bikaner, Rajasthan-334001</p>
               </div>
               <div className='card shadow-sm p-2 rounded-3 mb-3'>
                   <h4 className='text-danger'>Contact :</h4>

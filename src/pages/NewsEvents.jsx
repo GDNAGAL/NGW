@@ -1,3 +1,4 @@
+import Accordion from "../Components/Accordion";
 import Footer from "../Components/Footer/Footer"
 import Heading from "../Components/Heading/Heading"
 import ResponsiveNavbar from "../Components/ResponsiveNavbar/ResponsiveNavbar"
@@ -43,41 +44,26 @@ const NewsEvents = () => {
   return (
     <>
       <ResponsiveNavbar />
-      <div className="p-4 mb-4">
-        <div className="mt-4 p-4 bg-light" style={{ borderRadius: "10px" }}>
-          <Heading HeadingText="News and Events at Narain Global Academy" />
-          
-          <h2 className="mt-5 mb-4 text-primary">Recent News</h2>
+      <div className="container-fluid mt-3">
           <div className="row">
-            {news.map((item, index) => (
-              <div key={index} className="col-md-6 mb-4">
-                <div className="card h-100 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="card-title text-dark">{item.title}</h4>
-                    <h6 className="card-subtitle mb-2 text-muted">{item.date}</h6>
-                    <p className="card-text text-secondary">{item.description}</p>
-                  </div>
-                </div>
+            <div className="col-md-6">
+              <div className="p-3 rounded-5 border mb-4">
+                <Heading HeadingText="News" showBar={false} className="mb-3"/>
+                {news.map((item, index) => (
+                  <Accordion key={index} item={item} id={"news"+index}/>
+                ))}
               </div>
-            ))}
-          </div>
-
-          <h2 className="mt-5 mb-4 text-success">Upcoming Events</h2>
-          <div className="row">
-            {events.map((item, index) => (
-              <div key={index} className="col-md-6 mb-4">
-                <div className="card h-100 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="card-title text-dark">{item.title}</h4>
-                    <h6 className="card-subtitle mb-2 text-muted">{item.date}</h6>
-                    <p className="card-text text-secondary">{item.description}</p>
-                  </div>
-                </div>
+            </div>
+            <div className="col-md-6">
+              <div className="p-3 rounded-5 border">
+                <Heading HeadingText="Events" showBar={false} className="mb-3"/>
+                {events.map((item, index) => (
+                  <Accordion key={index} item={item} id={"event"+index}/>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
-      </div>
       <Footer />
     </>
   )
