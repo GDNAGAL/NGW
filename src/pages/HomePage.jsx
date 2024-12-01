@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async"
 import EOPCard from "../Components/EOPCard/EOPCard"
 import Heading from "../Components/Heading/Heading"
 import EventCard from "../Components/EventCard/EventCard"
-import A1Image from "../../public/Images/A1.JPG"
 import Footer from "../Components/Footer/Footer"
 import { Link } from "react-router-dom"
 import ResponsiveNavbar from "../Components/ResponsiveNavbar/ResponsiveNavbar"
@@ -46,21 +45,21 @@ const HomePage = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={A1Image} className="d-block w-100" alt="..."/>
+              <img src="/Images/A1.JPG" className="d-block w-100" alt="..."/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={A1Image} className="d-block w-100" alt="..."/>
+              <img src="/Images/A1.JPG" className="d-block w-100" alt="..."/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={A1Image} className="d-block w-100" alt="..."/>
+              <img src="/Images/A1.JPG" className="d-block w-100" alt="..."/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -206,11 +205,11 @@ const HomePage = () => {
                     <path fillRule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
                     <path fillRule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
                   </svg>
-                </Link>
+                </Link><br></br>
               </div>
             </div>
             {/* <div className="col-md-6 d-flex align-items-center text-center p-4">
-              <img src={A1Image} style={{margin:"auto"}} className="rounded-3" alt="" width="100%" height="100%"/>
+              <img src="/Images/A1.JPG" style={{margin:"auto"}} className="rounded-3" alt="" width="100%" height="100%"/>
             </div> */}
           </div>
         </div>

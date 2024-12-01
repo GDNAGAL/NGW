@@ -12,7 +12,7 @@ const Accordion = ({ id, item }) => {
           aria-expanded="true"
           aria-controls={`collapse-${id}`}  
         >
-          <div className='d-flex justify-content-between w-100 me-5'>
+          <div className='d-flex justify-content-between w-100 me-1 me-md-5'>
             <div>{item.title}</div>
             <div>10.03.2024</div>
           </div>

@@ -219,7 +219,7 @@ const ResponsiveNavbar = () => {
               </li>
               <li className="nav-item me-4"></li>
               <li className="nav-item">
-                <button className='btn btn-danger shadow-none w-100 rounded-3'>Apply Now</button>
+                <Link to="/contact-us/apply-now" className='btn btn-danger shadow-none w-100 rounded-3'>Apply Now</Link>
               </li>
             </ul>
           </div>

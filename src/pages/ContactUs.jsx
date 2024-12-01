@@ -2,21 +2,22 @@ import React from 'react';
 import ResponsiveNavbar from '../Components/ResponsiveNavbar/ResponsiveNavbar';
 import Footer from '../Components/Footer/Footer';
 import Heading from '../Components/Heading/Heading';
+import { useParams } from 'react-router-dom';
 
 const ContactUs = () => {
+  const {type} = useParams();
   return (
     <>
     <ResponsiveNavbar/>
     <div className="container my-5">
-      <Heading HeadingText="Contact Us"/>
+      <Heading HeadingText={type ?? "Contact Us"}/>
       <p className="text-center mb-4 contPara text-dark">
         If you have any questions, concerns, or feedback, feel free to reach out to us!
       </p>
 
       <div className="row">
         <div className="col-md-6">
-        <h2 className='text-danger text-center'>Questions?<br/>
-          Feel free to contact us.</h2>
+
           <form>
             <div className="row">
                 <div className="col-md-6 mb-3">
@@ -45,7 +46,7 @@ const ContactUs = () => {
         </div>
 
         <div className="col-md-6">
-            <div className='col-md-8 text-center pt-4 m-auto mt-4'>
+            <div className='col-md-8 text-center pt-4 m-auto'>
               <div className='card shadow-sm p-2 rounded-3 mb-3'>
                   <h4 className='text-danger'>Address :</h4>
                   <p>Nokha Road, Jhajhu, Kolayat, Bikaner, Rajasthan-334001</p>

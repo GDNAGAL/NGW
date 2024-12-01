@@ -14,13 +14,13 @@ const Footer = () => {
             <Heading HeadingText={"Preparing Your Child for a Brighter Future"}/>
             <div className='row text-center mt-4'>
                 <div className="col-md-4 mb-3">
-                    <button className='button'>Book a Campus Tour</button>
+                    <Link to="/contact-us/Book a Campus Tour" className='button'>Book a Campus Tour</Link>
                 </div>
                 <div className="col-md-4 mb-3">
-                    <button className='button'>Inquire for More Information</button>
+                    <Link to="/contact-us/Inquire for More Information" className='button'>Inquire for More Information</Link>
                 </div>
                 <div className="col-md-4 mb-3">
-                    <button className='button'>Enroll Now</button>
+                    <Link to="/contact-us/Enroll Now" className='button'>Enroll Now</Link>
                 </div>
             </div>
         </div>
