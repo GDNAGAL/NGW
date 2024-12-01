@@ -13,6 +13,7 @@ export default defineConfig({
     'process.env': {},  // Define an empty object for `process.env`
   },
   build: {
-    sourcemap: false,  // Disable sourcemaps generation
+    sourcemap: false, // Disable sourcemaps generation
+    chunkSizeWarningLimit: 10000  
   },
 })

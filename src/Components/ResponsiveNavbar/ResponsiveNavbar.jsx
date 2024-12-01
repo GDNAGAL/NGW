@@ -1,14 +1,13 @@
 import {React, useState} from 'react'
 import './ResponsiveNavbar.css'
 import {NavLink, Link} from 'react-router-dom'
-import slogo from '../../../public/Images/logo.webp'
 
 const ResponsiveNavbar = () => {
     return (
       <nav className="navbar sticky-top navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <NavLink className="navbar-brand d-flex align-items-center" to="/">
-            <img className='ms-3 img-fluid' style={{height:'50px'}} src={slogo} alt="" />
+            <img className='ms-3 img-fluid' style={{height:'50px'}} src="/Images/.webp" alt="" />
             {/* <h4 className='text-danger mb-0 ms-3 pt-1' style={{fontWeight:800,opacity:.8,textShadow: '-1px 2px 1px rgba(255, 193, 7, 1)'}}>Narain Global Academy</h4> */}
           </NavLink>
           <button className="navbar-toggler shadow-none align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

@@ -2,8 +2,6 @@ import React from 'react'
 import './Footer.css'
 import Heading from '../Heading/Heading'
 import { Link } from 'react-router-dom'
-import slogo from '../../../public/Images/logo.webp'
-import A1Image from "../../../public/Images/A1R.png"
 
 const Footer = () => {
   return (
@@ -25,7 +23,7 @@ const Footer = () => {
             </div>
         </div>
         <div>
-            <img src={A1Image} alt="" width="100%"/>
+            <img src="Images/A1R.png" alt="" width="100%"/>
         </div>
     </div>
     <div>
@@ -34,7 +32,7 @@ const Footer = () => {
                 <div className="row text-center">
                     <div className="col-md-4">
                         <div className='footerMcard bg-white p-4 shadow' style={{width:"200px", borderTopRightRadius:"50%", borderTopLeftRadius:"50%", borderBottomRightRadius:"10px", borderBottomLeftRadius:"10px", margin:"auto"}}>
-                            <img className='img-fluid' src={slogo} alt="" />
+                            <img className='img-fluid' src="Images/logo.webp" alt="" />
                         </div>
                         <div className="ssicon mt-3 d-flex align-items-center justify-content-around" style={{maxWidth:"300px", margin:"auto"}}>
                             <i className="bi bi-facebook"></i>
